@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmoni Budaya & Energi | Merawat Warisan, Merawat Masa Depan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Harmoni Nusantara</div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#budaya">Budaya</a></li>
+                <li><a href="#energi">Energi</a></li>
+                <li><a href="#edukasi">Kuis</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#lokasi">Peta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h1>Menyatukan Warisan Budaya dengan Kekuatan Energi Bersih</h1>
+                <p>Jelajahi keindahan tradisi Indonesia dan langkah-langkah menuju masa depan yang berkelanjutan.</p>
+                <a href="#budaya" class="cta-button">Mulai Eksplorasi</a>
+            </div>
+        </section>
+
+        <section id="budaya" class="section content-section">
+            <h2 class="section-title">Warisan Budaya Nusantara</h2>
+            <p class="section-description">Kearifan lokal adalah inti dari keseimbangan. Klik kartu untuk mempelajari filosofi di baliknya.</p>
+            
+            <div class="cards-container">
+                <div class="card clickable" data-target="tarian-detail">
+                    <img src="img/reog.jpg" alt="Reog Ponorogo" class="card-img">
+                    <div class="card-content">
+                        <h3>Tarian dan Seni Pertunjukan</h3>
+                        <p>Seni adalah ekspresi jiwa bangsa, mengajarkan kekompakan dan spiritualitas. <span class="read-more">Lihat Filosofi...</span></p>
+                    </div>
+                </div>
+                <div id="tarian-detail" class="expandable-content">
+                    <p><strong>Filosofi Seni:</strong> Tarian tradisional tidak hanya indah, tetapi mengandung nilai-nilai filosofis dan kearifan lokal. Tari Saman mengajarkan kekompakan, sementara Tari Kecak menceritakan epik Ramayana, menghubungkan penonton dengan warisan spiritual. Keindahan ini adalah representasi nyata keharmonisan masyarakat.</p>
+                </div>
+
+                <div class="card clickable" data-target="rumah-adat-detail">
+                    <img src="img/gadang.jpg" alt="Rumah Gadang" class="card-img">
+                    <div class="card-content">
+                        <h3>Rumah Adat dan Arsitektur</h3>
+                        <p>Dirancang harmonis dengan iklim dan lingkungan, menunjukkan konsep hidup berkelanjutan. <span class="read-more">Lihat Detail Bangunan...</span></p>
+                    </div>
+                </div>
+                <div id="rumah-adat-detail" class="expandable-content">
+                    <p><strong>Detail Bangunan:</strong> Rumah adat dibangun menggunakan bahan-bahan alami lokal dan dirancang secara termal efisien. Arsitektur panggung melindungi dari banjir dan hama, serta memungkinkan sirkulasi udara yang optimal. Ini adalah contoh arsitektur berkelanjutan yang telah dipraktikkan selama ratusan tahun.</p>
+                </div>
+
+                <div class="card clickable" data-target="kuliner-detail">
+                    <img src="img/rendang.jpg" alt="Rendang Daging" class="card-img">
+                    <div class="card-content">
+                        <h3>Kuliner Tradisional</h3>
+                        <p>Warisan kuliner kaya rempah, diolah dengan metode yang berkelanjutan dan *zero-waste*. <span class="read-more">Lihat Prinsip Pengolahan...</span></p>
+                    </div>
+                </div>
+                <div id="kuliner-detail" class="expandable-content">
+                    <p><strong>Prinsip Pengolahan:</strong> Kuliner Indonesia seringkali menggunakan sistem pengawetan alami (fermentasi, pengeringan) dan mengoptimalkan penggunaan seluruh hasil bumi (zero-waste cooking). Budaya makan bersama juga memperkuat ikatan sosial dan mengajarkan pentingnya berbagi sumber daya.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="energi" class="section alt-bg content-section">
+            <h2 class="section-title">Energi Bersih untuk Masa Depan</h2>
+            <p class="section-description">Langkah nyata dalam menjaga kelestarian alam dan warisan budaya. Klik untuk mengetahui potensinya.</p>
+            
+            <div class="cards-container energy-cards-container">
+                <div class="card clickable energy-card" data-target="plts-detail">
+                    <div class="card-content">
+                        <div class="card-icon">⚡</div>
+                        <h3>Pembangkit Listrik Tenaga Surya (PLTS)</h3>
+                        <p>Solusi bersih dan terdistribusi, memanfaatkan cahaya matahari yang melimpah. <span class="read-more">Lihat Potensi...</span></p>
+                    </div>
+                </div>
+                <div id="plts-detail" class="expandable-content">
+                    <p><strong>Potensi PLTS:</strong> Indonesia berada di khatulistiwa, menjadikannya lokasi ideal untuk PLTS. Pemasangan panel surya dapat memberikan kemandirian energi bagi desa tanpa perlu merusak lingkungan alam sekitar.</p>
+                </div>
+
+                <div class="card clickable energy-card" data-target="geothermal-detail">
+                    <div class="card-content">
+                        <div class="card-icon">♨️</div>
+                        <h3>Energi Geothermal (Panas Bumi)</h3>
+                        <p>Sumber energi stabil, minim emisi, dengan potensi terbesar di dunia. <span class="read-more">Lihat Keunggulan...</span></p>
+                    </div>
+                </div>
+                <div id="geothermal-detail" class="expandable-content">
+                    <p><strong>Keunggulan Geothermal:</strong> Berada di "Ring of Fire," Geothermal adalah sumber energi terbarukan paling stabil. Menghasilkan listrik 24/7. Pengembangannya harus hati-hati agar tidak mengganggu situs-situs budaya atau ekosistem sensitif.</p>
+                </div>
+
+                <div class="card clickable energy-card" data-target="mikrohidro-detail">
+                    <div class="card-content">
+                        <div class="card-icon">💧</div>
+                        <h3>Energi Air dan Mikrohidro</h3>
+                        <p>Memberikan listrik yang adil bagi desa-desa pedalaman dengan pemanfaatan aliran sungai kecil. <span class="read-more">Lihat Dampak Positif...</span></p>
+                    </div>
+                </div>
+                <div id="mikrohidro-detail" class="expandable-content">
+                    <p><strong>Dampak Positif:</strong> Pembangkit Mikrohidro menggunakan turbin kecil dan bendungan minimalis, menjaga keseimbangan ekosistem sungai. Solusi ideal untuk masyarakat adat yang tinggal di daerah aliran sungai, memberikan listrik tanpa emisi besar.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="edukasi" class="section quiz-section">
+            <h2 class="section-title">Uji Pengetahuan: Kuis Harmoni</h2>
+            <p class="section-description">Uji pemahaman Anda tentang Budaya Indonesia dan Energi Terbarukan dalam 5 pertanyaan acak!</p>
+            <button id="quiz-btn" class="cta-button secondary-btn">Mulai Kuis Budaya & Energi</button>
+            <div id="quiz-output" class="quiz-container-output">
+                <p>Klik tombol di atas untuk memulai sesi kuis.</p>
+            </div>
+        </section>
+
+        <section id="galeri" class="section content-section">
+            <h2 class="section-title">Galeri Visual</h2>
+            <p class="section-description">Kumpulan gambar beresolusi tinggi yang menangkap keindahan Budaya dan Inovasi Energi.</p>
+            <div class="galeri-grid">
+                <img src="img/reog.jpg" alt="Reog Ponorogo">
+                <img src="img/rendang.jpg" alt="Rendang Daging">
+                <img src="img/topeng.jpg" alt="Topeng Cirebon">
+                <img src="img/gadang.jpg" alt="Rumah Gadang">
+            </div>
+        </section>
+
+        <section id="lokasi" class="section alt-bg">
+            <h2 class="section-title">Peta Lokasi Proyek & Situs</h2>
+            <p class="section-description">Lihat di mana proyek energi bersih berinteraksi dengan situs-situs budaya penting.</p>
+            
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.862370243407!2d106.840003!3d-6.1517448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f53e6c0c2a8f%3A0xc61d06e23b1a8d1b!2sMonumen%20Nasional!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © 2024 Harmoni Nusantara. Dibuat dengan semangat berkelanjutan.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,399 @@
+/* RESET DAN FONT */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+/* PALET WARNA BARU (High-Contrast & Energetic) */
+:root {
+    --primary-dark: #1A1A1A; /* Black/Deep Charcoal */
+    --primary-color: #008080; /* Teal/Turquoise - Energi/Modernitas */
+    --accent-color: #FFD700; /* Gold/Emas - Untuk highlight dan tombol */
+    --text-color-light: #F4F6F6; /* Light Gray/Near White */
+    --bg-light: #FFFFFF;
+    --bg-alt: #F4F6F6; /* Latar belakang bagian */
+    --shadow-elevated: 0 15px 40px rgba(0, 0, 0, 0.25); /* Bayangan tebal */
+    --shadow-soft: 0 8px 15px rgba(0, 0, 0, 0.1);
+    --border-radius-large: 15px;
+    --border-radius-small: 8px;
+}
+
+body {
+    background: var(--bg-alt); 
+    color: var(--primary-dark);
+    line-height: 1.6;
+    /* PENTING: Tambahkan padding untuk menghindari konten tertutup header fixed */
+    padding-top: 80px; 
+}
+
+/* === HEADER DAN NAVBAR (FIXED) === */
+header {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    background: var(--primary-dark); 
+    box-shadow: var(--shadow-soft);
+    padding: 15px 5%; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 800;
+    color: var(--accent-color);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color-light);
+    font-weight: 600;
+    transition: color 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+
+/* === TATA LETAK UMUM === */
+main {
+    padding-top: 20px;
+}
+
+.section {
+    padding: 80px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.alt-bg {
+    background-color: var(--bg-alt);
+}
+
+.section-title {
+    font-size: 2.5em;
+    font-weight: 900;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.section-description {
+    text-align: center;
+    color: var(--primary-dark);
+    margin-bottom: 40px;
+    font-size: 1.1em;
+}
+
+/* === HERO SECTION === */
+.hero {
+    background: url('img/hero-bg.jpg') no-repeat center center/cover; /* Anda perlu menyediakan gambar ini */
+    height: 85vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 0; /* Override section padding */
+}
+
+.hero-text {
+    background-color: rgba(26, 26, 26, 0.7); /* Overlay gelap */
+    padding: 40px;
+    border-radius: var(--border-radius-large);
+    max-width: 800px;
+}
+
+.hero-text h1 {
+    font-size: 3.5em;
+    color: var(--text-color-light);
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+}
+
+.hero-text p {
+    font-size: 1.3em;
+    color: var(--text-color-light);
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--accent-color);
+    color: var(--primary-dark);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.cta-button:hover {
+    background-color: #FFC700; 
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    margin-top: 15px;
+}
+
+.secondary-btn:hover {
+    background-color: #006666; 
+}
+
+
+/* === CARDS (BUDAYA & ENERGI) === */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: var(--bg-light);
+    border-radius: var(--border-radius-large);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card.clickable {
+    cursor: pointer;
+}
+
+.card.clickable:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-elevated);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.read-more {
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+/* Energi Cards Specific */
+.energy-card .card-content {
+    text-align: center;
+}
+
+.card-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+/* === EXPANDABLE CONTENT === */
+.expandable-content {
+    display: none;
+    padding: 20px;
+    margin-top: -20px; /* Tarik ke atas sedikit */
+    margin-bottom: 30px;
+    background-color: #E0FFFF; /* Warna latar belakang ringan */
+    border-radius: 0 0 var(--border-radius-large) var(--border-radius-large);
+    border-left: 5px solid var(--primary-color);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.expandable-content.active {
+    display: block;
+}
+
+.expandable-content strong {
+    color: var(--primary-dark);
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+/* === KUIS SECTION === */
+.quiz-section {
+    text-align: center;
+}
+
+.quiz-container-output {
+    background: var(--bg-light);
+    padding: 30px;
+    border-radius: var(--border-radius-large);
+    box-shadow: var(--shadow-elevated);
+    margin-top: 30px;
+    text-align: left;
+}
+
+#quiz-container h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+#quiz-container p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.quiz-option {
+    padding: 15px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--bg-light);
+    color: var(--primary-dark);
+    font-size: 1em;
+    text-align: left;
+    border-radius: var(--border-radius-small);
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+    font-weight: 500;
+}
+
+.quiz-option:hover:enabled {
+    background-color: #e6f7f7; /* Hover untuk teal muda */
+}
+
+.quiz-option:disabled {
+    cursor: default;
+    opacity: 0.8;
+}
+
+/* Styling Feedback Kuis */
+.quiz-option.correct {
+    background-color: #d4edda; /* Hijau muda */
+    border-color: #4CAF50;
+    font-weight: 700;
+}
+
+.quiz-option.incorrect-selected {
+    background-color: #f8d7da; /* Merah muda */
+    border-color: #dc3545;
+    font-weight: 700;
+}
+
+.feedback-text {
+    text-align: center !important;
+    font-weight: 700 !important;
+    margin-top: 20px !important;
+    font-size: 1.2em !important;
+}
+
+#quiz-results h2 {
+    color: var(--accent-color);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#quiz-results p {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+
+/* === GALERI SECTION === */
+.galeri-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.galeri-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: var(--border-radius-small);
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.3s;
+}
+
+.galeri-grid img:hover {
+    transform: scale(1.03);
+    z-index: 10;
+}
+
+/* === PETA SECTION === */
+.map-container {
+    border-radius: var(--border-radius-large);
+    overflow: hidden;
+    box-shadow: var(--shadow-elevated);
+}
+
+/* === FOOTER === */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--primary-dark);
+    color: var(--text-color-light);
+    font-size: 0.9em;
+}
+
+/* Media Queries untuk Responsivitas */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links li {
+        margin: 5px 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5em;
+    }
+
+    .section {
+        padding: 60px 3%;
+    }
+}
